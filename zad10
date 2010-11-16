@@ -1,0 +1,8 @@
+#!/bin/bash
+echo podaj tekst do przetestowania:
+read a
+echo podaj wyrazenie regularne:
+read b
+echo podaj wynik zastepujacy:
+read c
+echo $a | sed -e "s/$b/$c/g"

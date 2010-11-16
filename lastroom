@@ -1,0 +1,4 @@
+#!/bin/bash
+x=$1
+echo ostatnio uzytwkownik byl zalogowany w pokoju: 
+last -4000 |grep $x | grep lab | tail -1  | cut -c 24-26

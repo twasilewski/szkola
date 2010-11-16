@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Co swieci na niebie w nocy?"
+read odp
+if [ "$odp" == ksiezyc ]; then
+echo "Tak! to prawda!"
+else
+echo "Nie! To nie parwda!"
+fi

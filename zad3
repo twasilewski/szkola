@@ -1,0 +1,5 @@
+#!/bin/bash
+echo processor:
+less /proc/cpuinfo | grep "model name" | tail -1 | cut -c 14-60
+echo memmory:
+less /proc/meminfo | grep "MemFree"

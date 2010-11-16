@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo Zastepuje pierwszy znak wykrzyknikiem:
+echo "Ala ma kota. Kot ma Ale." | sed -e 's/./!/'
+echo 
+echo zastepuje pierwsza kropke wykrzyknikiem
+echo "Ala ma kota. Kot ma Ale." | sed -e 's/\./!/'
+echo
+echo zastepuje wszystkie znaki wykrzyknikiem przez dodanie "g" w sed, co oznacza wykonywanie polecenia dla calego seda: 
+echo "Ala ma kota. Kot ma Ale." | sed -e 's/./!/g'
+echo
+echo zastepuje wszystkie kropki wykrzyknikami przez dodanie g w sed, co oznacza wykonanie polecenia dla calego seda
+echo "Ala ma kota. Kot ma Ale." | sed -e 's/\./!/g'

@@ -1,0 +1,2 @@
+#!/bin/bash
+last -400 | grep pts | sort | sed -e 's/pts.*//' | uniq -c | sort -r | head -3 

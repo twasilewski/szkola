@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -n "Username: "
+read username
+echo -n "Date: "
+read date
+echo -n "User $username logged "
+echo -n `last -4000 | grep "$username" | grep "$date" | wc -l` 
+echo -n " "
+echo "times on $date"

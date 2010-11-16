@@ -1,0 +1,2 @@
+#!/bin/bash
+echo test12345 | sed -n 's/\d*//'
