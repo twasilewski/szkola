@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "podaj liczbe klientow: "
+read klienci
+echo "najwieksza ilosc akcji w pojedynczej sesji wykonal klient: "
+./genlogs.sh $klienci > logi
+s=`cat logi | cut -c 31-47 | sed -e's/[A-Z]*//g' | cut -c 4-15 | sort | uniq -c | head -1 | cut -c 9-30`
+cat logi | grep $s | cut -c 57-65 | uniq -c | cut -c 9-50 | sed -e 's/\W//g'
+
+
+

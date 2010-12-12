@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -n "podaj liczbe klientow: "
+read klienci
+./genlogs.sh $klienci | cut -c 38-47 | sort | uniq -c
+
